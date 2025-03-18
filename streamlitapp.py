@@ -1,9 +1,13 @@
 import streamlit as st
 import requests
 import json
+import os
 
 # Flask API endpoint
-FLASK_API_URL = "http://127.0.0.1:5000/predict"
+API_BASE_URL = os.getenv("API_BASE_URL", "https://diabetes-pred-h2b0apd4g7cbbbcd.northeurope-01.azurewebsites.net")
+
+# Use the correct API endpoint
+FLASK_API_URL = f"{API_BASE_URL}/predict"
 
 # Streamlit UI
 st.title("🩺 Diabetes Prediction App")
