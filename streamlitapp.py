@@ -3,7 +3,7 @@ import requests
 import json
 
 # Use the correct API endpoint
-FLASK_API_URL = "https://diabetes-pred-h2b0apd4g7cbbbcd.northeurope-01.azurewebsites.net/predict"
+FLASK_API_URL = "https://disbetes-efbrb8h8dqf3dgce.canadacentral-01.azurewebsites.net/predict"
 
 # Streamlit UI
 st.title("🩺 Diabetes Prediction App")
