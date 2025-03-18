@@ -38,7 +38,7 @@ def predict():
         input_data_scaled = scaler.transform(input_data)
 
         # Get prediction (Probability)
-        loaded_model = tf.keras.models.load_model("diabetes_model.h5")
+        loaded_model = tf.keras.models.load_model("diabetes_model_1.h5")
         prediction = loaded_model.predict(input_data_scaled)
         print(prediction)
 
